@@ -1,6 +1,4 @@
-/* 
- */
-@import "iconfont.css";
+		@import "iconfont.css";
 @import "animate.min.css";
 
 /*-----------------------------------------------------------------------------------*/
@@ -146,7 +144,8 @@ header{
 /*	padding: 150px 0px 0px 0px;*/	
 	padding: 0px 0px 0px 0px;
 	height: 200px;
-
+/*	background: url('../img/.jpg');*/
+/* #dcd6fe */
 	background-color:  #C9E3FC !important;
 	background-size: cover;
 	background-repeat: no-repeat;
