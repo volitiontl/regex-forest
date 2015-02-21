@@ -1,0 +1,23 @@
+{
+  "name": "regex-forest",
+  "version": "1.0.0",
+  "description": "hackathon",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://volitiontl@github.com/volitiontl/regex-forest.git"
+  },
+  "author": "Tony",
+  "bugs": {
+    "url": "https://github.com/volitiontl/regex-forest/issues"
+  },
+  "homepage": "https://github.com/volitiontl/regex-forest",
+  "dependencies": {
+    "bluebird": "^2.9.12",
+    "express": "^4.11.2",
+    "lodash": "^3.3.0"
+  }
+}
