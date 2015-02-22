@@ -24,7 +24,7 @@ var the_style=[new ol.style.Style({
 var newarray=[];
 
 _.forEach(data,function(point){
-  var temp=new ol.Feature(new ol.geom.Point(point.coordinates))
+  var temp=new ol.Feature(new ol.geom.Point(point.coordinates));
   newarray.push(temp);
   temp.setStyle(the_style[0])
 });
@@ -38,6 +38,12 @@ var vectorLayer = new ol.layer.Vector({
 });
 
 
+var view = new ol.View({
+      center:ol.proj.transform([-79.396944,43.675833], 'EPSG:4326', 'EPSG:3857'),
+  zoom: 5
+})
+
+
 var map = new ol.Map({
   target: 'map',
   renderer: 'canvas',
@@ -45,9 +51,6 @@ var map = new ol.Map({
     baselayer,
     vectorLayer
   ],
-  view: new ol.View({
-    center: [0, 0],
-    //center: [2900000, 2900000],
-    zoom:5
-  })
+  view: view
 });
+
