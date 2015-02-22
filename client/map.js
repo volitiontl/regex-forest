@@ -40,8 +40,16 @@ var vectorLayer = new ol.layer.Vector({
 
 var view = new ol.View({
       center:ol.proj.transform([-79.396944,43.675833], 'EPSG:4326', 'EPSG:3857'),
-  zoom: 5
+  zoom: 1
 })
+
+var vector2 = new ol.layer.Heatmap({
+  source: new ol.source.KML({
+    extractStyles: false,
+    projection: 'EPSG:3857',
+    url: 'test.kml'
+  })
+});
 
 
 var map = new ol.Map({
@@ -49,7 +57,8 @@ var map = new ol.Map({
   renderer: 'canvas',
   layers: [
     baselayer,
-    vectorLayer
+    vectorLayer,
+    vector2
   ],
   view: view
 });

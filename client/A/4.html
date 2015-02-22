@@ -66,9 +66,13 @@ var raster = new ol.layer.Tile({
     layer: 'toner'
   })
 });
+      
+var baselayer=new ol.layer.Tile({
+     source:new ol.source.MapQuest({layer:'sat'})
+    });
 
 var map = new ol.Map({
-  layers: [raster, vector],
+  layers: [baselayer, vector],
   target: 'map',
   view: new ol.View({
      center:ol.proj.transform([-79.396944,43.675833], 'EPSG:4326', 'EPSG:3857'),
