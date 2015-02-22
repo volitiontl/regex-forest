@@ -11,7 +11,7 @@ var stroke = new ol.style.Stroke({color: 'red', width: 2});
 var fill = new ol.style.Fill({color: 'red'});
 var the_style=[new ol.style.Style({
   image: new ol.style.RegularShape(
-      /** @type {olx.style.RegularShapeOptions} */({
+({
         fill: fill,
         stroke: stroke,
         points: 4,
