@@ -60,10 +60,9 @@
 			  </div>
 			  <div class="collapse navbar-collapse navbar-ex1-collapse">
 			    <ul class="nav navbar-nav">
-			      <li><a onclick="$('header').animatescroll({padding:71});">About</a></li>
-			      <li><a onclick="$('.detail').animatescroll({padding:71});">Screens</a></li>
+			      <li><a onclick="$('header').animatescroll({padding:71});">Index</a></li>
+			      <li><a onclick="$('.detail').animatescroll({padding:71});">Information</a></li>
 			      <li><a onclick="$('.features').animatescroll({padding:71});">Features</a></li>
-			      <li><a onclick="$('.social').animatescroll({padding:71});">Social	</a></li>
 			    </ul>
 			  </div>
 		  </div>
@@ -127,7 +126,7 @@ var map = new ol.Map({
   target: 'map',
   view: new ol.View({
      center:ol.proj.transform([-79.396944,43.675833], 'EPSG:4326', 'EPSG:3857'),
-    zoom: 9
+    zoom: 7
   })
 });
 
@@ -172,7 +171,7 @@ var map = new ol.Map({
 		<div class="container">
 			  <div class="row">
 				  <div class="col-md-12">
-					  <h1>The Air Quality Monitor provides a visual interface for the Air quality of Toronto & GTA 
+					  <h1>The Air Quality Monitor provides a visual interface for the Air quality of Toronto, GTA & beyond. 
 
 					  </h1>
 				  </div>
@@ -211,8 +210,8 @@ var map = new ol.Map({
 					    			<p>Air pollution affects all major cities and society, including individual health. It is important to maintain a sustainable environment to make the society cleaner and more fuel efficient.
 					    			</p>
 					    		</div>
-					    		<img src="img/screenshots/app-3.png">
-					    	  <!--   			<div class="col-sm-12 col-md-5">
+					    	  <!-- 	<img src="img/screenshots/app-3.png">
+					    	    			<div class="col-sm-12 col-md-5">
 					    			<div class="app-screenshot">
 					    				<img src="img/screenshots/app-3.png" class="img-responsive" alt="App Screen 2">
 					    			</div>
@@ -249,35 +248,37 @@ var map = new ol.Map({
 	  
 	  <!-- FEATURES
 	      ================================================== -->
+	    
 	  <section class="features">
 		  <div class="container">
 			  <div class="row">
 				
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-look"></i></div>
-					  <h2>Helps indicate Air Quality in your region&amp; </h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					  <h2>Helps indicates Air Quality in your region</h2>
+					  <p>Shows you a heatmap indicator of the air quality with in your region. The dataset is broken down into intensity on a spectrum from low, being cold colours to warm being the most. </p>
 				  </div>
 				
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-bookmark"></i></div>
-					  <h2>blah blah</h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					  <h2>Educate</h2>
+					  <p>Helps people understand the health of their city in terms of air quality. The dataset visualizes the city impacted and it's degree with a colour code index based on intensity of the quality of air.</p>
 				  </div>
 				 
 				  <div class="col-md-4">
 					  <div class="circle"><i class="icon-user"></i></div>
-					  <h2>The Team</h2>
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+					  <h2>Impact</h2>
+					  <p>How as individuals we can impact the air quality of the society that we reside in by taking a bike, buss, and/or walking. Sustainable transport can help reduce global warming, greenhouse gas emission, and air pollution of a city. Play a proactive role indirectly impacting the future climate of earth that we will setp into tomorrow today.</p>
 				  </div>
 				  
 			  </div>
 		  </div>
 	  </section>
-	  
+
+
 	
 	 <!-- SOCIAL
-	     ================================================== -->
+	     ================================================== 
 	  <section class="social">
 	  	<div class="container">
 
@@ -293,20 +294,29 @@ var map = new ol.Map({
 	  		  </div>
 	  	  </div>	  
 	  </section>
-	  
+	  -->
 	
+
+
+
 	 <!-- GET IT 
-	     ==================================================  -->
+	     ==================================================  
 	  <section class="get-it">
 	  	<div class="container">
-	  		<div class="row">
-	  		<!--	<div class="col-md-12">
+	  		<div class="row">-->
+
+	  	<!--	<div class="col-md-12">
 	  				<h1>Avaialable now on the App Store</h1>
 	  				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
 	  				<button type="button" class="app-store"></button>
 	  			</div>
-	  		-->
-	  			<div class="col-md-12">
+	  		---------------------------->
+	  	
+
+
+	  	<!--
+
+	  		<div class="col-md-12">
 	  				<hr />
 		  			<ul>
 	                	<li><a href="#link-here">Contact</a></li>
@@ -323,6 +333,10 @@ var map = new ol.Map({
 
 
 	
+-- >
+
+
+
 	 
 	 <!-- JAVASCRIPT
 	     ================================================== -->
